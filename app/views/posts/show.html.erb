@@ -14,13 +14,14 @@
     <p>Share Blog Post 1</p>
     <a onclick="javascript:window.open('http://twitter.com/share?text=<%= @post.title %> by @michellewebdev - &amp;url=<%=url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=800, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
     <a onclick="javascript:window.open('http://facebook.com/sharer.php?u=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=800, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-    <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=800, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-          
+    <a onclick="javascript:window.open('http://plus.google.com/share?url=<%= url_for([@post, {only_path: false}]) %>', '_blank', 'width=800, height=800, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>  
   </div> 
 
   <hr>
 
   </div>
+
+  <%= render 'disqus' %>
 
   <br>
   <br>
