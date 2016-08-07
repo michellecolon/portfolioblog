@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Michelle Col&oacute;n- Web Dev</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<header id="main_navigation" class="clearfix">
+  <a href="#" class="name">Michelle Col&oacute;n</a>
+  <nav>
+    <a href="#">Projects</a>
+    <%= link_to "Blog", posts_path %>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
 <%= yield %>
 
