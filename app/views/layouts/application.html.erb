@@ -12,7 +12,7 @@
 <body>
 
 <header id="main_navigation" class="clearfix">
-  <a href="#" class="name">Michelle Col&oacute;n</a>
+  <%= link_to "Michelle Colón", root_path, class: "name" %>
   <nav>
     <a href="#">Projects</a>
     <%= link_to "Blog", posts_path %>
@@ -21,6 +21,15 @@
 </header>
 
 <%= yield %>
+
+<footer id="main_footer">
+  <p class="copyright">&copy;2016 Michelle Col&oacute;n</p>
+  <nav>
+    <a href="http://github.com/michellecolon" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="http://twitter.com/michellewebdev" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="http://instagram.com/michellewebdev" target="_blank"><i class="fa fa-instagram"></i></a>
+  </nav>
+</footer>
 
 </body>
 </html>
